@@ -1,4 +1,4 @@
-## Scaling Dense Event-Stream Pretraining from Visual Foundation Models [CVPR'26 Highlight]
+### Scaling Dense Event-Stream Pretraining from Visual Foundation Models [CVPR'26 Highlight]
 
 <p align="center">
   <a href="https://arxiv.org/pdf/2603.03969" target='_blank'>
