@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://arxiv.org/pdf/2603.03969" target='_blank'>
-    <img src="https://img.shields.io/badge/Paper-%F0%9F%93%83-purple">
+    <img src="https://img.shields.io/badge/Paper Link-%F0%9F%93%83-purple">
   </a>
   
   <a href="" target='_blank'>
