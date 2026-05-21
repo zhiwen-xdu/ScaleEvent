@@ -6,8 +6,8 @@ import random
 import sys
 sys.path.append("/home/zhiyu/projects/DINOv3")
 
-from scale_event.dataset.admin import env_settings
-from scale_event.dataset.event_utils import prepare_data,prepare_mask,to_tensor
+from vfm2event.dataset.admin import env_settings
+from vfm2event.dataset.event_utils import prepare_data,prepare_mask,to_tensor
 
 
 class RESEG(torch.utils.data.Dataset):

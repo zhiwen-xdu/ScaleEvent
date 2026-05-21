@@ -1,8 +1,0 @@
-zurich_city_00_a
-zurich_city_01_a
-zurich_city_02_a
-zurich_city_04_a
-zurich_city_05_a
-zurich_city_06_a
-zurich_city_07_a
-zurich_city_08_a

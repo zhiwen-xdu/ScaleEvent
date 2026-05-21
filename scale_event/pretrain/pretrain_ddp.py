@@ -2,11 +2,11 @@ import os
 import torch
 
 import sys
-sys.path.append("/home/zhiyu/projects/DINOv3")
+sys.path.append(".../ScaleEvent")  # Needs modification
 
 from scale_event.dataset import DistillDataset
 from scale_event.models import DistillEncoder
-from scale_event.pretrain.criterion import DistillLoss_Naive,DistillLoss_With_Gram,DistillLoss_With_CrossGram_V1,DistillLoss_With_CrossGram_V2,DistillLoss_With_CrossGram_V3,Multiscale_DistillLoss_With_Gram
+from scale_event.pretrain.criterion import DistillLoss_Naive,DistillLoss_With_Gram,DistillLoss_With_CrossGram
 
 
 import torch.distributed as dist
@@ -41,21 +41,8 @@ def trainer(experiment_id="DINO01",epoch_num=10,batch_size=16):
     # Create the teacher and student encoders
     distill_encoder = DistillEncoder()
 
-    # Load Event-based pre-trained weight
-    # weight = "/home/zhiyu/projects/DINOv3/scale_event/output/DINO20/checkpoints/ViTL16_Event_Encoder_EP01.pth"  # checkpoints/
-    # checkpoint = torch.load(weight, map_location="cpu")  # 'module.event_encoder.cls_token, 'module.backbone.cls_token
-    #
-    # model_state_dict = distill_encoder.event_encoder.state_dict()
-    # for key, value in checkpoint.items():
-    #     if "event_encoder" in key:
-    #         model_state_dict[key.replace("module.event_encoder.", "")] = value
-    #
-    # distill_encoder.event_encoder.load_state_dict(model_state_dict, strict=True)
-
-
     # Set trainable params
     train_params_embed = ["event_encoder.patch_embed"]
-    # train_params_backbone = ["event_encoder.blocks." + str(i) + "." for i in [4, 11, 17, 23]]  # [2, 5, 8, 11],[4, 11, 17, 23],[3,4,10,11,16,17,22,23]
     train_params_backbone = ["event_encoder.blocks." + str(i) + "." for i in range(24)]
 
     train_params_embed_list = []
@@ -89,7 +76,7 @@ def trainer(experiment_id="DINO01",epoch_num=10,batch_size=16):
     scheduler = torch.optim.lr_scheduler.ExponentialLR(optimizer=optimizer, gamma=0.9)
 
     # Set loss functions
-    loss_fun = DistillLoss_With_CrossGram_V2()  # DistillLoss_Naive, DistillLoss_With_Gram, DistillLoss_With_CrossGram, Multiscale_DistillLoss_With_Gram
+    loss_fun = DistillLoss_With_CrossGram() # DistillLoss_Naive,DistillLoss_With_Gram,DistillLoss_With_CrossGram
 
     iteration = 1
     for epoch in range(epoch_num):
@@ -111,38 +98,9 @@ def trainer(experiment_id="DINO01",epoch_num=10,batch_size=16):
             torch.nn.utils.clip_grad_norm_(distill_encoder.parameters(), 0.1)
             optimizer.step()
 
-            # def _update_with_momentum_sensitivity(self, params_keep):
-            #     """Get the sensitivity and the trainable parameter configurations."""
-            #     # Accumulating gradient for a epoch
-            #     for n, p in self.actor.net.backbone.named_parameters():
-            #         if p.requires_grad:
-            #             # ===(1) Grad to Sensitivity===
-            #             grad_square_keep = self.grads_keep[n]
-            #             grad_square_curr = (p.grad ** 2).detach() * 1e8
-            #             # Sensitivity 也用Momentum计算
-            #             grad_square = (grad_square_keep + grad_square_curr) / 2.0
-            #             # 用于记录前一步的grads
-            #             self.grads_keep[n] = grad_square_curr
-            #             # Normalization Grad
-            #             # print("==1==",n,grad_square.shape,torch.max(grad_square))
-            #             sensitivities = grad_square / torch.max(grad_square)
-            #             sensitivities = sensitivities.flatten()
-            #             # ===(2) Sensitivity to Momentum Factor===
-            #             _, sort_id = sensitivities.sort(descending=False)  # 从小到大
-            #             momentums = torch.linspace(self.m_min, self.m_max, steps=sensitivities.shape[0])
-            #             momentums = momentums.to(sensitivities.device)
-            #             sort_momentums = momentums[sort_id]
-            #             sort_momentums = sort_momentums.view(p.grad.shape)
-            #
-            #             # Momentum Updata
-            #             p_keep = params_keep[n]
-            #             p.data = p_keep.data * sort_momentums + p.data * (1.0 - sort_momentums)
-
             if iteration % 20 == 1:
                 # For  DistillLoss_With_CrossGram
                 log_str = "[Train: %d], [Iteration: %d], Distill Loss: %.4f, Similar Loss: %.4f, Intra-relation Loss: %.4f, Cross-relation Loss: %.4f" % (epoch+1,iteration,loss.item(),loss_sim.item(),10*loss_intra.item(),4*loss_cross.item())
-                # For Multiscale_DistillLoss_With_Gram
-                # log_str = "[Train: %d], [Iteration: %d], Distill Loss: %.4f, Similar Loss: %.4f, Multi-scale Similar Loss: %.4f, Intra-relation Loss: %.4f" % (epoch + 1, iteration, loss.item(), loss_sim.item(), loss_sim_mscale.item(), 10 * loss_intra.item())
                 with open(log_file, 'a') as f:
                     f.write(log_str + "\n")
                 print(log_str)
@@ -162,4 +120,4 @@ def trainer(experiment_id="DINO01",epoch_num=10,batch_size=16):
 
 if __name__ == '__main__':
     os.environ['CUDA_VISIBLE_DEVICES'] = '4,5,6,7'
-    trainer(experiment_id="DINO21",epoch_num=5,batch_size=3)    # 20-S,12/8-B,5-L
+    trainer(experiment_id="DINO",epoch_num=10,batch_size=3)    # 20-S,12/8-B,5-L

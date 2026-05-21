@@ -4,8 +4,8 @@ import torch
 import random
 
 
-from scale_event.dataset.admin import env_settings
-from scale_event.dataset.event_utils import prepare_data,prepare_mask,to_tensor
+from vfm2event.dataset.admin import env_settings
+from vfm2event.dataset.event_utils import prepare_data,prepare_mask,to_tensor
 
 
 class Decd(torch.utils.data.Dataset):

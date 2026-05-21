@@ -1,9 +1,9 @@
 import torch
 import random
 import sys
-sys.path.append("/home/zhiyu/projects/DINOv3")
+sys.path.append(".../ScaleEvent")  # Needs modification
 
-from scale_event.dataset import Cityscape,Decd,Kitti,Waymo,Dsec,GoPro,M3ED,MVSEC,RESEG,DDD17
+from vfm2event.dataset import Cityscape,Decd,Kitti,Waymo,Dsec,GoPro,M3ED,MVSEC,RESEG,DDD17
 
 
 class DistillDataset(torch.utils.data.Dataset):

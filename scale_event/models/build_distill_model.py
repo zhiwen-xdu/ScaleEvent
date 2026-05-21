@@ -1,7 +1,7 @@
 import torch
 from torch import nn
 import sys
-sys.path.append("/home/zhiyu/projects/DINOv3")
+sys.path.append(".../ScaleEvent")  # Needs modification
 
 from dinov3.hub.backbones import dinov3_vits16,dinov3_vitb16,dinov3_vitl16
 
@@ -22,22 +22,22 @@ class DistillEncoder(nn.Module):
         super().__init__()
         self.image_encoder = dinov3_vitl16()
         self.event_encoder = dinov3_vitl16()
-        # dinov3_vitb16_pretrain_lvd1689m-73cec8be.pth
-        self.checkpoint_path = "/home/zhiyu/projects/DINOv3/dinov3/pretrained/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth"
+
+        # "dinov3_vits16_pretrain_lvd1689m-08c60483.pth"
+        # "dinov3_vitb16_pretrain_lvd1689m-73cec8be.pth"
+        # "dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth"
+        self.checkpoint_path = "../pretrained/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth"  # Needs modification
         self.load_pretrained()
         for p in self.image_encoder.parameters():
             p.requires_grad = False
         for p in self.event_encoder.parameters():
             p.requires_grad = False
 
-        # "dinov3_vits16_pretrain_lvd1689m-08c60483.pth"
-        # "dinov3_vitb16_pretrain_lvd1689m-73cec8be.pth"
-        # "dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth"
-
     def load_pretrained(self,):
         checkpoint = torch.load(self.checkpoint_path,map_location="cpu")
         self.image_encoder.load_state_dict(checkpoint, strict=True)
         self.event_encoder.load_state_dict(checkpoint, strict=True)
+
 
     # @torch.no_grad()
     def forward(self,images,events):

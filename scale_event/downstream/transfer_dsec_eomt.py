@@ -3,9 +3,9 @@ import torch
 import sys
 sys.path.append("/home/zhiyu/projects/DINOv3")
 
-from scale_event.dataset import DSEC_SEG_EOMT_TRAIN,DSEC_SEG_EOMT_TEST
-from scale_event.models import EoMT_ViTS,EoMT_ViTL,EoMT_ViTB,to_per_pixel_logits_semantic
-from scale_event.downstream.criterion import MetricsSemseg_ESS, SegmentLoss_MOET, MetricsSemseg_EoMT
+from vfm2event.dataset import DSEC_SEG_EOMT_TRAIN,DSEC_SEG_EOMT_TEST
+from vfm2event.models import EoMT_ViTS,EoMT_ViTL,EoMT_ViTB,to_per_pixel_logits_semantic
+from vfm2event.downstream.criterion import MetricsSemseg_ESS, SegmentLoss_MOET, MetricsSemseg_EoMT
 
 
 import torch.distributed as dist
@@ -89,7 +89,7 @@ def transfer(experiment_id="SEG01-DSEC",epoch_num=10,batch_size=16):
     # DINO17/checkpoints/ViTL16_Event_Encoder_EP05.pth
     # DINO20/checkpoints/ViTL16_Event_Encoder_EP05.pth
     # DINO21/checkpoints/ViTL16_Event_Encoder_EP05.pth
-    weight = "/home/zhiyu/projects/DINOv3/scale_event/output/DINO21/checkpoints/ViTL16_Event_Encoder_EP05.pth"
+    weight = "/home/zhiyu/projects/DINOv3/vfm2event/output/DINO21/checkpoints/ViTL16_Event_Encoder_EP05.pth"
     checkpoint = torch.load(weight, map_location="cpu")
 
     model_state_dict = segmentor.state_dict()
