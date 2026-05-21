@@ -1,0 +1,6 @@
+dir0
+dir1
+dir3
+dir4
+dir6
+dir7
