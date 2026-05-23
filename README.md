@@ -80,12 +80,39 @@ python -m torch.distributed.launch \
 ```
 
 
+
 <div align="center">
 
-| | ViT-S  | ViT-B  | ViT-L |
-|:--------------------:|:--------------------:|:--------------------:|:--------------------:|
-| Pretrained Event Backbone| [DOWNLOAD](https://drive.google.com/file/d/1NTIeHJSBAUTg4Plq2M9SCrtJAfp_7asJ/view?usp=sharing) | [DOWNLOAD](https://drive.google.com/file/d/1VQKAhDuzFO3DFjXqe4I4-JNk8oZdIkRu/view?usp=sharing) | [DOWNLOAD](https://drive.google.com/file/d/11DEi9U7MgnXgFKFgarFhwO7FH69iLsGz/view?usp=sharing) |
+<table>
+<tr>
+  <th><sup> </sup></th>
+  <th><sup>ViT-S</sup></th>
+  <th><sup>ViT-B</sup></th>
+  <th><sup>ViT-L</sup></th>
+</tr>
 
+<tr>
+  <td><sup><b>Pretrained RGB Backbone (DINOv3)</b></sup></td>
+
+  <td><sup><a href="https://drive.google.com/file/d/1_RKZQDvnX28zCqG3jMCOLPJBvTXMqIzM/view?usp=sharing">DOWNLOAD</a></sup></td>
+
+  <td><sup><a href="https://drive.google.com/file/d/1fhd_ouLw5B5aCTXEE4ca3tsU2ZEPt3iK/view?usp=sharing">DOWNLOAD</a></sup></td>
+
+  <td><sup><a href="https://drive.google.com/file/d/1At9lqNUJKiPOK8NCEh4ugEkLQSvNE2Al/view?usp=sharing">DOWNLOAD</a></sup></td>
+</tr>
+
+<tr>
+  <td><sup><b>Pretrained Event Backbone (Ours)</b></sup></td>
+
+  <td><sup><a href="https://drive.google.com/file/d/1NTIeHJSBAUTg4Plq2M9SCrtJAfp_7asJ/view?usp=sharing">DOWNLOAD</a></sup></td>
+
+  <td><sup><a href="https://drive.google.com/file/d/1VQKAhDuzFO3DFjXqe4I4-JNk8oZdIkRu/view?usp=sharing">DOWNLOAD</a></sup></td>
+
+  <td><sup><a href="https://drive.google.com/file/d/11DEi9U7MgnXgFKFgarFhwO7FH69iLsGz/view?usp=sharing">DOWNLOAD</a></sup></td>
+</tr>
+
+
+</table>
 
 </div>
 
