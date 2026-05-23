@@ -1,4 +1,5 @@
 <div align="center">
+  <img src="assets/Logo.png" width="100%" higth="100%">
   <h3 align="center"><strong>Scaling Dense Event-Stream Pretraining from Visual Foundation Models [CVPR'26 Highlight] </strong></h3>
     <p align="center">
     <a>Zhiwen Chen</a><sup>1</sup>&nbsp;&nbsp;
