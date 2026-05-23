@@ -15,6 +15,10 @@
   <a href="https://arxiv.org/pdf/2603.03969" target='_blank'>
     <img src="https://img.shields.io/badge/Paper Link-%F0%9F%93%83-purple">
   </a>
+
+  <a href="" target='_blank'>
+    <img src="https://visitor-badge.laobi.icu/badge?page_id=zhiwen-xdu.ScaleEvent&left_color=gray&right_color=purple">
+  </a>
 </p>
 
 
