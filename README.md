@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/Logo.png" width="80%" higth="80%">
+  <img src="assets/Logo.png" width="90%" higth="90%">
   <h3 align="center"><strong>Scaling Dense Event-Stream Pretraining from Visual Foundation Models [CVPR'26 Highlight] </strong></h3>
     <p align="center">
     <a>Zhiwen Chen</a><sup>1</sup>&nbsp;&nbsp;
