@@ -1,5 +1,3 @@
-### The project is not fully organized yet; please try again around May 27, 2026.
-
 <div align="center">
   <h3 align="center"><strong>Scaling Dense Event-Stream Pretraining from Visual Foundation Models [CVPR'26 Highlight] </strong></h3>
     <p align="center">
