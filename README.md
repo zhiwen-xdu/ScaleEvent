@@ -82,8 +82,8 @@ We release our main simulated (VID2E) and aligned pretraining data publicly. Oth
 </div>
 
 
-<table style="font-size: 12px;">
-<tr>
+<table>
+<tr style="font-size: 11px;">
   <th></th>
   <th><b>Cityscapes</b></th>
   <th><b>KITTI</b></th>
@@ -93,7 +93,7 @@ We release our main simulated (VID2E) and aligned pretraining data publicly. Oth
   <th><b>VisEvent+CoeSot</b></th>
 </tr>
 
-<tr>
+<tr style="font-size: 11px;">
   <td><b>Pretrained RGB-Event Data</b></td>
   <td><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/11daMsgYAhqyWReVcVwFACqQPkt6dSth-/view?usp=sharing">DOWNLOAD</a></td>
   <td><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/1LSsPIJCYfh-jLeueu1J-S32HIh8OKmIG/view?usp=sharing">DOWNLOAD</a></td>
