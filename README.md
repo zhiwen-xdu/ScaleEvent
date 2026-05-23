@@ -81,7 +81,8 @@ We release our main simulated (VID2E) and aligned pretraining data publicly. Oth
 
 </div>
 
-<table>
+
+<table style="font-size: 13px;">
 <tr>
   <th></th>
   <th><b>Cityscapes</b></th>
