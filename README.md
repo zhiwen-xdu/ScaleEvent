@@ -85,25 +85,24 @@ We release our main simulated (VID2E) and aligned pretraining data publicly. Oth
 <table>
 <tr>
   <th></th>
-  <th><font size="1"><b>Cityscapes</b></font></th>
-  <th><font size="1"><b>KITTI</b></font></th>
-  <th><font size="1"><b>DECD</b></font></th>
-  <th><font size="1"><b>M3ED</b></font></th>
-  <th><font size="1"><b>Waymo</b></font></th>
-  <th><font size="1"><b>VisEvent+CoeSot</b></font></th>
+  <th><small><b>Cityscapes</b></small></th>
+  <th><small><b>KITTI</b></small></th>
+  <th><small><b>DECD</b></small></th>
+  <th><small><b>M3ED</b></small></th>
+  <th><small><b>Waymo</b></small></th>
+  <th><small><b>VisEvent+CoeSot</b></small></th>
 </tr>
 
 <tr>
-  <td><font size="1"><b>Pretrained RGB-Event Data</b></font></td>
-  <td><font size="1"><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/11daMsgYAhqyWReVcVwFACqQPkt6dSth-/view?usp=sharing">DOWNLOAD</a></font></td>
-  <td><font size="1"><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/1LSsPIJCYfh-jLeueu1J-S32HIh8OKmIG/view?usp=sharing">DOWNLOAD</a></font></td>
-  <td><font size="1"><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/13oNOAfinTOgZCW6e1l2ATeCuPXiRYtV9/view?usp=sharing">DOWNLOAD</a></font></td>
-  <td><font size="1"><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/1JoF7siu_aHL0SBUyr0N-dM7eLlZtzauQ/view?usp=sharing">DOWNLOAD</a></font></td>
-  <td><font size="1"><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/1Y9L7oESqdKJjXZeUDPtiD0egBOZEfCgE/view?usp=sharing">DOWNLOAD</a></font></td>
-  <td><font size="1"><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/1g6xQk8UFa1Y3X_3xFxW86sKg1egOzvKE/view?usp=sharing">DOWNLOAD</a></font></td>
+  <td><small><b>Pretrained RGB-Event Data</b></small></td>
+  <td><small><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/11daMsgYAhqyWReVcVwFACqQPkt6dSth-/view?usp=sharing">DOWNLOAD</a></small></td>
+  <td><small><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/1LSsPIJCYfh-jLeueu1J-S32HIh8OKmIG/view?usp=sharing">DOWNLOAD</a></small></td>
+  <td><small><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/13oNOAfinTOgZCW6e1l2ATeCuPXiRYtV9/view?usp=sharing">DOWNLOAD</a></small></td>
+  <td><small><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/1JoF7siu_aHL0SBUyr0N-dM7eLlZtzauQ/view?usp=sharing">DOWNLOAD</a></small></td>
+  <td><small><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/1Y9L7oESqdKJjXZeUDPtiD0egBOZEfCgE/view?usp=sharing">DOWNLOAD</a></small></td>
+  <td><small><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/1g6xQk8UFa1Y3X_3xFxW86sKg1egOzvKE/view?usp=sharing">DOWNLOAD</a></small></td>
 </tr>
 </table>
-
 
 Format of Pre-trained Datasets:
 ```Shell
