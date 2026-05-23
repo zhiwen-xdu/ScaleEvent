@@ -82,39 +82,28 @@ We release our main simulated (VID2E) and aligned pretraining data publicly. Oth
 </div>
 
 
+
 <table>
 <tr>
   <th></th>
-  <th><small><b>Cityscapes</b></small></th>
-  <th><small><b>KITTI</b></small></th>
-  <th><small><b>DECD</b></small></th>
-  <th><small><b>M3ED</b></small></th>
-  <th><small><b>Waymo</b></small></th>
-  <th><small><b>VisEvent+CoeSot</b></small></th>
+  <th><sub>Cityscapes</sub></th>
+  <th><sub>KITTI</sub></th>
+  <th><sub>DECD</sub></th>
+  <th><sub>M3ED</sub></th>
+  <th><sub>Waymo</sub></th>
+  <th><sub>VisEvent+CoeSot</sub></th>
 </tr>
 
 <tr>
-  <td><small><b>Pretrained RGB-Event Data</b></small></td>
-  <td><small><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/11daMsgYAhqyWReVcVwFACqQPkt6dSth-/view?usp=sharing">DOWNLOAD</a></small></td>
-  <td><small><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/1LSsPIJCYfh-jLeueu1J-S32HIh8OKmIG/view?usp=sharing">DOWNLOAD</a></small></td>
-  <td><small><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/13oNOAfinTOgZCW6e1l2ATeCuPXiRYtV9/view?usp=sharing">DOWNLOAD</a></small></td>
-  <td><small><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/1JoF7siu_aHL0SBUyr0N-dM7eLlZtzauQ/view?usp=sharing">DOWNLOAD</a></small></td>
-  <td><small><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/1Y9L7oESqdKJjXZeUDPtiD0egBOZEfCgE/view?usp=sharing">DOWNLOAD</a></small></td>
-  <td><small><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/1g6xQk8UFa1Y3X_3xFxW86sKg1egOzvKE/view?usp=sharing">DOWNLOAD</a></small></td>
+  <td><sub><b>Pretrained RGB-Event Data</b></sub></td>
+  <td><sub><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/11daMsgYAhqyWReVcVwFACqQPkt6dSth-/view?usp=sharing">DOWNLOAD</a></sub></td>
+  <td><sub><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/1LSsPIJCYfh-jLeueu1J-S32HIh8OKmIG/view?usp=sharing">DOWNLOAD</a></sub></td>
+  <td><sub><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/13oNOAfinTOgZCW6e1l2ATeCuPXiRYtV9/view?usp=sharing">DOWNLOAD</a></sub></td>
+  <td><sub><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/1JoF7siu_aHL0SBUyr0N-dM7eLlZtzauQ/view?usp=sharing">DOWNLOAD</a></sub></td>
+  <td><sub><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/1Y9L7oESqdKJjXZeUDPtiD0egBOZEfCgE/view?usp=sharing">DOWNLOAD</a></sub></td>
+  <td><sub><a href="https://gemini.aimonkey.plus/gemini/drive/file/d/1g6xQk8UFa1Y3X_3xFxW86sKg1egOzvKE/view?usp=sharing">DOWNLOAD</a></sub></td>
 </tr>
 </table>
-
-Format of Pre-trained Datasets:
-```Shell
-├── Dataset A
-    ├── Sequence Name
-        ├── image      # RGB/Gray Images, input of teacher network (image-domain dinov3 backbone).
-        ├── voxel     # Event-oriented Voxel-like Images, input of student network (event-domain feature encoder).
-        ├── evimg     # Event-oriented Color Images, used to efficiently calculate event masks (event-image alignment).
-    ├── ... 
-├── Dataset B
-    ├── ... 
-```
 
 
 
