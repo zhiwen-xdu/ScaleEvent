@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/Logo.png" width="100%" higth="100%">
+  <img src="assets/Logo.png" width="80%" higth="80%">
   <h3 align="center"><strong>Scaling Dense Event-Stream Pretraining from Visual Foundation Models [CVPR'26 Highlight] </strong></h3>
     <p align="center">
     <a>Zhiwen Chen</a><sup>1</sup>&nbsp;&nbsp;
@@ -26,7 +26,7 @@
 ### ![image](https://github.com/user-attachments/assets/1ae19de2-b18b-4b0d-a206-19f0666757fb) About
 Learning fine-grained representations from irregular event streams is challenging due to limited annotations and scalability issues. This project introduces a novel self-supervised pretraining method that distills Visual Foundation Models (VFMs) to enhance event representations at scale.
 <div align="center">
-  <img src="assets/Thumbnail.png" width="75%" higth="75%">
+  <img src="assets/Thumbnail.png" width="80%" higth="80%">
 </div>
 
 
