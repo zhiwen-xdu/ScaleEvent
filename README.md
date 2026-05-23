@@ -42,7 +42,7 @@ pip install git+https://github.com/zhiwen-xdu/ScaleEvent.git
 ```
 
 #### 💾 2. Data Preparation
-We release our main simulated (VID2E) and aligned pretraining data publicly. Other datasets can be downloaded and processed using the links provided in the supplementary materials of the paper.
+We release our main simulated (VID2E) and aligned pretraining data publicly. Other datasets can be downloaded and processed using the links provided in the supplementary materials of the paper. The 'VisEvent+CoeSot' datasets are also available for download from the [EventSAM](https://github.com/zhiwen-xdu/EventSAM).
 
 
 <div align="center">
