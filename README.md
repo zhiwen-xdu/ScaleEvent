@@ -44,11 +44,37 @@ pip install git+https://github.com/zhiwen-xdu/ScaleEvent.git
 #### 💾 2. Data Preparation
 We release our main simulated (VID2E) and aligned pretraining data publicly. Other datasets can be downloaded and processed using the links provided in the supplementary materials of the paper.
 
+
 <div align="center">
 
-| | Cityscapes  | DECD  | M3ED | Waymo | VisEvent+CoeSot |
-|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|
-| Pretrained RGB-Event Data | [DOWNLOAD](https://drive.google.com/file/d/11daMsgYAhqyWReVcVwFACqQPkt6dSth-/view?usp=sharing) | [DOWNLOAD](https://drive.google.com/file/d/13oNOAfinTOgZCW6e1l2ATeCuPXiRYtV9/view?usp=sharing) | [DOWNLOAD](https://drive.google.com/file/d/1JoF7siu_aHL0SBUyr0N-dM7eLlZtzauQ/view?usp=sharing) | [DOWNLOAD](https://drive.google.com/file/d/1Y9L7oESqdKJjXZeUDPtiD0egBOZEfCgE/view?usp=sharing) | [DOWNLOAD](https://drive.google.com/file/d/1g6xQk8UFa1Y3X_3xFxW86sKg1egOzvKE/view?usp=sharing) |
+<table>
+<tr>
+  <th><sup> </sup></th>
+  <th><sup>Cityscapes</sup></th>
+  <th><sup>KITTI</sup></th>
+  <th><sup>DECD</sup></th>
+  <th><sup>M3ED</sup></th>
+  <th><sup>Waymo</sup></th>
+  <th><sup>VisEvent+CoeSot</sup></th>
+</tr>
+
+<tr>
+  <td><sup><b>Pretrained RGB-Event Data</b></sup></td>
+
+  <td><sup><a href="https://drive.google.com/file/d/11daMsgYAhqyWReVcVwFACqQPkt6dSth-/view?usp=sharing">DOWNLOAD</a></sup></td>
+
+  <td><sup><a href="https://drive.google.com/file/d/1LSsPIJCYfh-jLeueu1J-S32HIh8OKmIG/view?usp=sharing">DOWNLOAD</a></sup></td>
+  
+  <td><sup><a href="https://drive.google.com/file/d/13oNOAfinTOgZCW6e1l2ATeCuPXiRYtV9/view?usp=sharing">DOWNLOAD</a></sup></td>
+
+  <td><sup><a href="https://drive.google.com/file/d/1JoF7siu_aHL0SBUyr0N-dM7eLlZtzauQ/view?usp=sharing">DOWNLOAD</a></sup></td>
+
+  <td><sup><a href="https://drive.google.com/file/d/1Y9L7oESqdKJjXZeUDPtiD0egBOZEfCgE/view?usp=sharing">DOWNLOAD</a></sup></td>
+
+  <td><sup><a href="https://drive.google.com/file/d/1g6xQk8UFa1Y3X_3xFxW86sKg1egOzvKE/view?usp=sharing">DOWNLOAD</a></sup></td>
+</tr>
+
+</table>
 
 </div>
 
