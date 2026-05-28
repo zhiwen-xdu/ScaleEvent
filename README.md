@@ -32,7 +32,7 @@ Learning fine-grained representations from irregular event streams is challengin
 
 ### 📋 To-Do List
 - [x] [2026.5.21] Release the code, data and model for dense event-stream pretraining
-- [ ]  Release the code, data and model for event-based semantic segmentation
+- [ ] [around 2026.6.6] Release the code, data and model for event-based semantic segmentation 
   
 <!-- * [x] -->
 <!-- - ☑️ -->
