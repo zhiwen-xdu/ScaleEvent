@@ -143,6 +143,43 @@ The feature visualization tool (i.e., similarity map, pca_map, cluster map) used
 
 
 #### 📊 5. Downstream Tasks
+##### Semantic Segmentation
+
+<div align="center">
+
+<table>
+<tr>
+  <th><sup> </sup></th>
+  <th><sup>ViT-S</sup></th>
+  <th><sup>ViT-B</sup></th>
+  <th><sup>ViT-L</sup></th>
+</tr>
+
+<tr>
+  <td><sup><b>DDD17-SEG (<a href="https://drive.google.com/file/d/1meGdq6Km6GjUPgTmDLi2p1yjPn87G-6_/view?usp=drive_link">DATASET</a>)</b></sup></td>
+
+  <td><sup><a href="https://drive.google.com/file/d/1HVT6jo2qO0yB36x76_ldZoibHshHjC4A/view?usp=drive_link">DOWNLOAD</a></sup></td>
+
+  <td><sup><a href="https://drive.google.com/file/d/1Z3HJ-dj6U96-1tCMdvptPVq04njNiVmb/view?usp=drive_link">DOWNLOAD</a></sup></td>
+
+  <td><sup><a href="https://drive.google.com/file/d/1D30U3jqYR1BMBzJyUaHP5qd9W2LmCszo/view?usp=drive_link">DOWNLOAD</a></sup></td>
+</tr>
+
+<tr>
+  <td><sup><b>DSEC-SEG (<a href="https://drive.google.com/file/d/1N447dreP6PUWsKZMY7Ze61UkrHM-2J3g/view?usp=drive_link">DATASET</a>)</b></sup></td>
+
+  <td><sup><a href="https://drive.google.com/file/d/1rdcU_b-VRrBSjm4WEyEEL_tffq4FL0m-/view?usp=drive_link">DOWNLOAD</a></sup></td>
+
+  <td><sup><a href="https://drive.google.com/file/d/15ZZIqLMkRC-HUC6gw1zlYxaD1yvGqUSM/view?usp=drive_link">DOWNLOAD</a></sup></td>
+
+  <td><sup><a href="https://drive.google.com/file/d/10dj782Wj2mIxxJ-Gak3Q4lDUiBN1_ckm/view?usp=drive_link">DOWNLOAD</a></sup></td>
+</tr>
+
+
+</table>
+
+</div>
+
 
 
 ### ![image](https://github.com/user-attachments/assets/42c6ae62-1a34-489b-b13a-4e0999d7797c) Acknowledgments
