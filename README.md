@@ -155,10 +155,11 @@ Feedbacks and comments are welcome! Feel free to contact us via [zhiwen.chen@cit
 If you use ScaleEvent in your research, please use the following BibTeX entry.
 
 ```
-@article{chen2026scaling,
+@inproceedings{chen2026scaling,
   title={Scaling Dense Event-Stream Pretraining from Visual Foundation Models},
   author={Chen, Zhiwen and Hou, Junhui and Zhu, Zhiyu and Wu, Jinjian and Shi, Guangming},
-  journal={arXiv preprint arXiv:2603.03969},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={8011--8022},
   year={2026}
 }
 ```
