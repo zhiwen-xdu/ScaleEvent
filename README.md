@@ -143,7 +143,7 @@ The feature visualization tool (i.e., similarity map, pca_map, cluster map) used
 
 
 #### 📊 5. Downstream Tasks
-##### Semantic Segmentation
+##### (1) Semantic Segmentation
 
 <div align="center">
 
