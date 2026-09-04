@@ -180,6 +180,42 @@ The feature visualization tool (i.e., similarity map, pca_map, cluster map) used
 
 </div>
 
+##### (2) Depth Estimation
+<div align="center">
+
+<table>
+<tr>
+  <th><sup> </sup></th>
+  <th><sup>ViT-S</sup></th>
+  <th><sup>ViT-B</sup></th>
+  <th><sup>ViT-L</sup></th>
+</tr>
+
+<tr>
+  <td><sup><b>MVSEC-Depth</b></sup></td>
+
+  <td><sup><a href="https://drive.google.com/file/d/11h666dBmBbd8HZZ13bFoQZUNwqQXG4nU/view?usp=drive_link">DOWNLOAD</a></sup></td>
+
+  <td><sup><a href="https://drive.google.com/file/d/1vMFaKN7VF_QkMfWheR0Unf-4JDw1An1a/view?usp=drive_link">DOWNLOAD</a></sup></td>
+
+  <td><sup><a href="https://drive.google.com/file/d/1fJhC9yC69GJILObNIwSPUGr9yxjTWp25/view?usp=drive_link">DOWNLOAD</a></sup></td>
+</tr>
+
+<tr>
+  <td><sup><b>DSEC-Depth</b></sup></td>
+
+  <td><sup><a href="https://drive.google.com/file/d/1TjcoDzok8t6WUsACB1dji60j4mNTwCrh/view?usp=drive_link">DOWNLOAD</a></sup></td>
+
+  <td><sup><a href="https://drive.google.com/file/d/1NaXjALdJ1Z5M4Iaykc0a5VH2vaEHTgwA/view?usp=drive_link">DOWNLOAD</a></sup></td>
+
+  <td><sup><a href="https://drive.google.com/file/d/1oIFSYqRFH4ofjyZEaHpnjoQUKsp3P_01/view?usp=drive_link">DOWNLOAD</a></sup></td>
+</tr>
+
+
+</table>
+
+</div>
+
 
 
 ### ![image](https://github.com/user-attachments/assets/42c6ae62-1a34-489b-b13a-4e0999d7797c) Acknowledgments
